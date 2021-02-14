@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  reactmine:
+    container_name: reactmine
+    build:
+      context: .
+      dockerfile:
+        Dockerfile
+    ports:
+      - "3000:80"
